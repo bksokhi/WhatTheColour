@@ -40,6 +40,7 @@
                 .floorForm {
                     margin: 10px auto;
                     width: 100%;
+                    padding-right: 10px;
                 }
             }
         }
@@ -56,7 +57,7 @@
     }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 460px) {
     header {
         min-height: 50vh;
 
@@ -66,6 +67,40 @@
             button {
                 padding: 15px;
             }
+        }
+    }
+
+    .bedFrame {
+
+        max-width: 300px;
+        .top {
+            max-width: 200px;
+        }
+
+        .middle {
+            left: 0;
+            max-width: 175px;
+        }
+
+        .bottom {
+            max-width: 175px;
+        }
+
+    }
+    
+    .mattress {
+        .mattressTop,
+        .mattressBottom {
+            max-width: 140px;
+            // margin-left: -10px;
+        }
+    }
+
+    .pillows {
+        max-width: 225px;
+        margin-left: -40px;
+        .pillowTwo {
+        display: none;
         }
     }
 }
