@@ -1,0 +1,122 @@
+// redesign radio buttons
+
+[type="radio"] {
+    opacity: 0;
+    position: absolute;
+}
+
+.buttonLabel {
+    padding-left: 30px;
+    position: relative;
+    line-height: 40px;
+}
+
+.buttonLabel::before,
+.buttonLabel::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    background: $styleColor;
+    border: 2px black solid;
+
+}
+
+[type="radio"]:checked + .buttonLabel::after {
+    background-color: $secondaryStyleColor;
+}
+
+[type="radio"]:active + .buttonLabel::before,
+[type="radio"]:active + .buttonLabel::after {
+    background: black;
+}
+
+[type="radio"]:focus + .buttonLabel::before,
+[type="radio"]:focus + .buttonLabel::after{
+    border: 3px solid $secondaryStyleColor;
+}
+
+h3 {
+    width: auto;
+}
+
+h3,
+.wallColorLabel{
+    font-size: 2.0rem;
+    border: 1px solid $primaryFontColor;
+    padding: 10px;
+    border-radius: 9px;
+    background: linear-gradient(145deg, #e6d1c9, #ffffff);
+}
+
+
+// right toolbar layout/style
+.rightToolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 200px;
+    margin-top: -200px;
+
+    .wallForm {
+        text-align: right;
+    }
+    .wallColor {
+        margin-top: 20px;
+        font-family: $bodyFont;
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+
+    .furnitureForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 150px;
+        background: white;
+        border: 1px solid $primaryFontColor;
+        width: 100px;
+        padding: 5px;
+        margin-top: 10px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            font-family: $bodyFont;
+            font-size: 1.4rem;
+            line-height: 30px;
+        }
+    }
+}
+
+// bottom toolbar layout and style
+.bottomToolbar {
+    // border: 3px solid blue;
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    
+
+    h3,
+    .floorForm {
+        margin-top: 150px;
+        .buttonLabel {
+            margin: 0 15px;
+            
+        }
+    }
+
+    .floorForm {
+        background: white;
+        border: 1px solid $primaryFontColor;
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,64 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 6.0rem;
+    margin: 0 0;
+}
+
+button {
+    a {
+        text-decoration: none;
+        font-size: 2.0rem;
+    }
+}
+
+
+h1,
+h3,
+.wallColorLabel {
+    font-family: $headingFont;
+    color: $primaryFontColor;
+    font-weight: 700;
+}
+
+
+
+h2,
+button,
+label {
+    font-family: $bodyFont;
+    font-size: 2.0rem;
+}
+
+p {
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+}
+
+.buttonLabel {
+    font-size: 1.5rem;
+}
+
+
+@keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+
+

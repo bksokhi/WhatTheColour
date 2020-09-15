@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2d3de20d4d.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>What the colour?!</title>
+</head>
+<body>
+
+    <header>
+        <div class="headerContainer">
+
+            <h1>What The Colour?!</h1>
+            <h2>
+                Test your paint colour selections by inputting their colour code below.
+            </h2>
+            <button><a href="#wallForm">Get Started</a></button>
+        </div>
+    </header>
+
+    <main>
+    <!-- room container -->
+        <section class="room">
+            <section class="wall wrapper">
+            <!-- bed -->
+                <div class="bed">
+            
+                    <div class="bedFrame">
+                        <div class="top">
+            
+                            <div class="left"></div>
+                            <div class="right"></div>
+            
+                        </div>
+            
+                        <div class="middle"></div>
+            
+                        <div class="bottom">
+            
+                            <div class="bottomLeft"></div>
+                            <div class="bottomRight"></div>
+                        </div>
+                    </div>
+
+            <!-- mattress -->
+                    <div class="mattress">
+            
+                        <div class="mattressTop"></div>
+                        <div class="mattressBottom"></div>
+                    </div>
+
+            <!-- pillow -->
+                    <div class="pillows">
+                        <div class="pillowOne"></div>
+                        <div class="pillowTwo"></div>
+                    </div>
+            
+                </div>
+
+            <!-- night table -->
+                <div class="table">
+            
+                    <div class="tableTop"></div>
+                    <div class="tableFront"></div>
+                    <div class="legs">
+                        <div class="tableLeftLeg"></div>
+                        <div class="tableRightLeg"></div>
+                    </div>
+                </div>
+                
+                <section class="rightToolbar">
+                    <!-- right toolbar container -->
+                
+                    <!-- wall colour -->
+                    <form action="#" class="wallForm" id=wallForm>
+                        <!-- sr-only? -->
+                
+                        <label for="wallColor" class="wallColorLabel">Wall Colour</label>
+                        <input type="text" class="wallColor" id="wallColor" name="wallColor" placeholder="#e0ece4 / rgb(224, 236, 228)">
+                    </form>
+                    
+                    <ul>
+                    <li></li>
+                    </ul>
+
+                    <!-- furniture shade -->
+                    <h3>Furniture Shade</h3>
+                
+                    <form action="#" class="furnitureForm" id="furniture">
+                
+                        <input autocomplete="off" type="radio" id="furnitureLight" name="furnitureShade" value="furnitureLight">
+                        <label for="furnitureLight" class="buttonLabel">Light</label>
+                
+                        <input autocomplete="off" type="radio" id="furnitureMedium" name="furnitureShade" value="furnitureMedium">
+                        <label for="furnitureMedium" class="buttonLabel">Medium</label>
+                
+                        <input autocomplete="off" type="radio" id="furnitureDark" name="furnitureShade" value="furnitureDark">
+                        <label for="furnitureDark" class="buttonLabel">Dark</label>
+                
+                    </form>
+                
+                </section>
+            </section>
+            
+            <!-- floor -->
+            <section class="floor">
+                <div class="wrapper">
+
+                    <section class="bottomToolbar">
+                        
+                        <!-- floor shade -->
+                        <h3>Floor Shade</h3>
+                        
+                        <form action="#" class="floorForm">
+                            
+                            <input autocomplete="off" type="radio" id="floorLight" name="floorShade" value="floorLight">
+                            <label for="floorLight" class="buttonLabel">Light</label>
+                            
+                            <input autocomplete="off" type="radio" id="floorMedium" name="floorShade" value="floorMedium">
+                            <label for="floorMedium" class="buttonLabel">Medium</label>
+                            
+                            <input autocomplete="off" type="radio" id="floorDark" name="floorShade" value="floorDark">
+                            <label for="floorDark" class="buttonLabel">Dark</label>
+                            
+                        </form>
+                        
+                    </section>
+                    
+                </div>
+                </section>
+        </section>
+
+      
+
+        
+
+        <!-- bottom toolbar container -->
+        
+
+    </main>
+
+    <footer>
+        <div class="wrapper">
+        
+        <div class="footerContainer">
+
+            <p>Created by Baljit Sokhi</p>
+            
+            <div class="iconContainer">
+                <a href="https://github.com/bksokhi" aria-label="Github Link"><i class="fab fa-github"></i></a>
+                <a href="https://twitter.com/Baljit_S26" aria-label="Twitter Link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        
+
+
+        </div>
+    </footer>
+    
+    <script src='https://code.jquery.com/jquery-3.4.0.min.js' integrity='sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=' crossorigin='anonymous'></script>
+
+    <script type="text/javascript" src="./scripts.js"></script>
+
+</body>
+</html>
