@@ -525,6 +525,7 @@ h3,
   section .floor .bottomToolbar .floorForm {
     margin: 10px auto;
     width: 100%;
+    padding-right: 10px;
   }
 }
 
@@ -537,7 +538,7 @@ h3,
   }
 }
 
-@media (max-width: 490px) {
+@media (max-width: 460px) {
   header {
     min-height: 50vh;
   }
@@ -546,5 +547,29 @@ h3,
   }
   header .headerContainer button {
     padding: 15px;
+  }
+  .bedFrame {
+    max-width: 300px;
+  }
+  .bedFrame .top {
+    max-width: 200px;
+  }
+  .bedFrame .middle {
+    left: 0;
+    max-width: 175px;
+  }
+  .bedFrame .bottom {
+    max-width: 175px;
+  }
+  .mattress .mattressTop,
+  .mattress .mattressBottom {
+    max-width: 140px;
+  }
+  .pillows {
+    max-width: 225px;
+    margin-left: -40px;
+  }
+  .pillows .pillowTwo {
+    display: none;
   }
 }
